@@ -72,13 +72,13 @@ function resetForm() {
 }
 
 let backgrounds = [
-    'https://github.com/adityasuhendar/praktikum-pemweb/blob/main/Kalkulator%20Nilai%20Mahasiswa/gambar/itera.jpg',  // Gambar background pertama
+    './gambar/itera1.jpg',  // Gambar background pertama
     './gambar/itera2.jpg', // Gambar background kedua
-    '/gambar/itera3.jpg', // Gambar background ketiga
-    '/gambar/itera4.jpg', // Gambar background keempat
-    '/gambar/itera5.jpg', // Gambar background kelima
-    '/gambar/itera6.jpg', // Gambar background keenam
-    '/gambar/itera7.jpg'  // Gambar background ketujuh
+    './gambar/itera3.jpg', // Gambar background ketiga
+    './gambar/itera4.jpg', // Gambar background keempat
+    './gambar/itera5.jpg', // Gambar background kelima
+    './gambar/itera6.jpg', // Gambar background keenam
+    './gambar/itera7.jpg'  // Gambar background ketujuh
 ];
 
 let currentBackgroundIndex = 0; // Indeks awal untuk gambar background
