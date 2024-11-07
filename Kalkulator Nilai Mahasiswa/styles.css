@@ -1,0 +1,126 @@
+/* ADITYA WAHYU SUHENDAR */
+/* 122140235 */
+/* KELAS RA (ASAL RB) */
+/* FILE CSS */
+
+* {
+    margin: 0; /* Menghilangkan margin default pada semua elemen */
+    padding: 0; /* Menghilangkan padding default pada semua elemen */
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total elemen */
+}
+
+body {
+    position: relative; /* Menjadikan body sebagai referensi untuk elemen ::before */
+    font-family: Arial, sans-serif; /* Mengatur font teks menjadi Arial dengan fallback ke sans-serif */
+    display: flex; /* Menggunakan Flexbox untuk tata letak dalam elemen body */
+    justify-content: center; /* Menyelaraskan konten secara horizontal di tengah */
+    align-items: center; /* Menyelaraskan konten secara vertikal di tengah */
+    height: 100vh; /* Mengatur tinggi elemen body agar sama dengan tinggi viewport */
+    background-size: cover; /* Memastikan gambar latar memenuhi seluruh area body */
+    background-position: center; /* Menempatkan gambar latar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar latar */
+    color: #333; /* Mengatur warna teks menjadi abu-abu gelap */
+    transition: background-image 0.1s ease-in-out; /* Menambahkan transisi halus saat background berubah */
+    opacity: 0.98; /* Menambahkan opacity pada body */
+}
+
+body::before {
+    content: ""; /* Membuat elemen kosong untuk overlay */
+    position: absolute; /* Menempatkan elemen overlay relatif terhadap body */
+    top: 0; /* Memulai overlay dari bagian atas body */
+    left: 0; /* Memulai overlay dari bagian kiri body */
+    right: 0; /* Memenuhi seluruh lebar body */
+    bottom: 0; /* Memenuhi seluruh tinggi body */
+    background-color: rgba(255, 255, 255, 0.5); /* Overlay putih dengan transparansi 50% */
+    z-index: 1; /* Menempatkan overlay di atas background namun di bawah konten */
+}
+
+.container {
+    position: relative; /* Membuat posisi container relatif agar diatur dengan z-index */
+    z-index: 2; /* Membuat konten container tetap di atas overlay */
+}
+
+.container {
+    background-color: #ffffff; /* Mengatur latar belakang container menjadi putih */
+    padding: 20px 30px; /* Memberikan padding di dalam container */
+    border-radius: 10px; /* Membuat sudut-sudut container melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di sekitar container */
+    max-width: 400px; /* Membatasi lebar maksimal container */
+    width: 100%; /* Mengatur lebar container menjadi 100% dari kontainer induk */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    opacity: 0.92; /* Mengatur transparansi container */
+}
+
+h2 {
+    font-size: 24px; /* Mengatur ukuran font untuk judul */
+    color: #3b82f6; /* Mengatur warna font judul menjadi biru */
+    margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+}
+
+form input[type="number"] {
+    width: 100%; /* Mengatur lebar input agar memenuhi container */
+    padding: 10px; /* Memberikan padding di dalam input */
+    margin: 10px 0; /* Memberikan margin di atas dan di bawah input */
+    border: 1px solid #ddd; /* Mengatur border input */
+    border-radius: 5px; /* Membuat sudut input melengkung */
+    font-size: 16px; /* Mengatur ukuran font input */
+}
+
+.button-container {
+    display: flex; /* Menggunakan Flexbox untuk menata tombol */
+    justify-content: space-between; /* Menyebar tombol ke kedua sisi */
+    margin-top: 20px; /* Memberikan jarak di atas button container */
+}
+
+.button-container button {
+    padding: 10px 20px; /* Memberikan padding pada tombol */
+    font-size: 16px; /* Mengatur ukuran font pada tombol */
+    color: white; /* Mengatur warna teks pada tombol menjadi putih */
+    border: none; /* Menghapus border tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat di-hover */
+    transition: background-color 0.3s; /* Menambahkan animasi transisi saat background berubah */
+    width: 48%; /* Mengatur lebar tombol agar seimbang */
+}
+
+.button-container button:hover {
+    opacity: 0.9; /* Mengurangi opasitas tombol saat di-hover */
+}
+
+.button-container .reset-button {
+    background-color: #e53935; /* Mengatur warna tombol reset menjadi merah */
+}
+
+.button-container .reset-button:hover {
+    background-color: #d32f2f; /* Mengatur warna tombol reset saat di-hover menjadi lebih gelap */
+}
+
+.button-container button:first-child {
+    background-color: #3b82f6; /* Mengatur warna tombol hitung nilai menjadi biru */
+}
+
+.hasil {
+    margin-top: 20px; /* Memberikan jarak di atas hasil */
+    text-align: left; /* Menyelaraskan teks hasil ke kiri */
+}
+
+.hasil p {
+    font-size: 16px; /* Mengatur ukuran font untuk teks hasil */
+    margin: 8px 0; /* Memberikan margin di atas dan di bawah teks hasil */
+}
+
+.status {
+    font-weight: bold; /* Membuat teks status lebih tebal */
+    padding: 8px; /* Memberikan padding di dalam status */
+    border-radius: 4px; /* Membuat sudut status melengkung */
+}
+
+.status.lulus {
+    color: #ffffff; /* Mengatur warna teks status lulus menjadi putih */
+    background-color: #4CAF50; /* Mengatur latar belakang status lulus menjadi hijau */
+}
+
+.status.gagal {
+    color: #ffffff; /* Mengatur warna teks status gagal menjadi putih */
+    background-color: #e53935; /* Mengatur latar belakang status gagal menjadi merah */
+}

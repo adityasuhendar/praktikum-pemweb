@@ -1,0 +1,33 @@
+<!-- ADITYA WAHYU SUHENDAR -->
+<!-- 122140235 -->
+<!-- KELAS RA (ASAL RB) -->
+<!-- FILE HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter yang digunakan dalam dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport agar responsif -->
+    <title>Kalkulator Nilai Mahasiswa</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dengan file CSS styles.css -->
+</head>
+<body>
+    <div class="container"> <!-- Membungkus keseluruhan kalkulator dalam satu container -->
+        <h2>Kalkulator Nilai Mahasiswa</h2> <!-- Judul aplikasi -->
+        <form id="nilaiForm"> <!-- Formulir untuk input nilai mahasiswa -->
+            <input type="number" id="tugas" placeholder="Masukan Nilai Tugas (30%)" min="0" max="100" required> <!-- Input nilai tugas dengan bobot 30%-->
+            <input type="number" id="uts" placeholder="Masukan Nilai UTS (30%)" min="0" max="100" required> <!-- Input nilai UTS dengan bobot 30%-->
+            <input type="number" id="uas" placeholder="Masukan Nilai UAS (40%)" min="0" max="100" required> <!-- Input nilai UAS dengan bobot 40%-->
+
+            <div class="button-container"> <!-- Kontainer untuk tombol -->
+                <button type="button" onclick="nilai()">Hitung Nilai</button> <!-- Tombol untuk menghitung nilai -->
+                <button type="button" class="reset-button" onclick="resetForm()">Hapus</button> <!-- Tombol untuk menghapus nilai input -->
+            </div>
+        </form>
+
+        <div id="hasil" class="hasil"> <!-- Menampilkan hasil perhitungan nilai -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Menyertakan file JavaScript eksternal -->
+</body>
+</html>
