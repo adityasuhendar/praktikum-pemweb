@@ -73,7 +73,7 @@ function resetForm() {
 
 let backgrounds = [
     'https://github.com/adityasuhendar/praktikum-pemweb/blob/main/Kalkulator%20Nilai%20Mahasiswa/gambar/itera.jpg',  // Gambar background pertama
-    '/gambar/itera2.jpg', // Gambar background kedua
+    './gambar/itera2.jpg', // Gambar background kedua
     '/gambar/itera3.jpg', // Gambar background ketiga
     '/gambar/itera4.jpg', // Gambar background keempat
     '/gambar/itera5.jpg', // Gambar background kelima
